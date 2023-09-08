@@ -1,0 +1,68 @@
+.tools-icon {
+  height: 100%;
+  width: 32px;
+  display: flex;
+  align-items: center;
+}
+
+.tools-icon div {
+  padding: 5px;
+}
+
+.tools-icon div:hover {
+  background-color: #ffffff40;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.tools-icon div img {
+  height: 32px;
+}
+
+.tools-menu {
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  display: none;
+  background-color: #ffffff;
+  height: fit-content;
+  width: fit-content;
+  list-style: none;
+  border: 5px solid #0476a6;
+}
+
+.tools-menu ul {
+  padding: 5px;
+  margin: 0 !important;
+  display: flex;
+  flex-direction: column;
+}
+
+.tools-menu ul li {
+  display: flex;
+  height: 100%;
+  padding-block: 5px;
+}
+
+.tools-menu ul li span {
+  font-weight: bold;
+  color: black !important;
+}
+
+.tools-menu * a {
+  line-height: 14px;
+  color: black !important;
+}
+
+.tools-menu * a:link:hover {
+  text-decoration: underline;
+}
+
+.tools-menu * img {
+  width: 20px;
+  margin-right: 5px;
+}
+
+.tools-menu.show {
+  display: block;
+}

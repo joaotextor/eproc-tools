@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "Ferramentas Judiciais",
+  "description": "Acesso rápido a ferramentas para uso na Justiça Federal",
+  "version": "1.1",
+  "content_scripts": [
+    {
+      "matches": ["https://eproc.jfrs.jus.br/*"],
+      "js": ["index.js"],
+      "css": ["styles.css"]
+    }
+  ],
+  "action": {
+    "default_icon": "eprocTools-ext-icon.png"
+  },
+  "icons": {
+    "16": "eprocTools-ext-icon-16.png",
+    "32": "eprocTools-ext-icon-32.png",
+    "48": "eprocTools-ext-icon-48.png",
+    "128": "eprocTools-ext-icon.png"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "eproctools2023rsere@joaotextor.com"
+    }
+  }
+}
